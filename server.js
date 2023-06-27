@@ -10,7 +10,7 @@ connect()
 
 //express json middleware
 app.use(express.json());
-app.use(cors({origin:"https://readify-tn.onrender.com"}))
+app.use(cors())
 app.use("/api/admin", require("./routes/admin"));
 app.use("/api/user", require("./routes/user"));
 app.use("/api/author", require("./routes/author"));
